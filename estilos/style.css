@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* estilo de barra de navegacion bootstrap */
+.navbar{  
+  box-shadow: 2px 2px 5px orangered;
+  margin-top: 0;
+}
+.icono{
+  width: 50px;
+}
+
+/* estilo de titulo */
+.titulo{
+   font-size: 80px;
+   font-weight: bold;
+   box-shadow: 2px 2px 8px rgb(42, 141, 63);
+   text-decoration: underline;
+   text-align: center;
+   color: rgb(211, 127, 17);
+   background-color: rgb(158, 185, 243);
+}
+    
+/* estilo de body */
+body{
+    background-color: rgb(132, 226, 195);
+    border: 5px double rgb(47, 202, 182);
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+
+
+  .textoCentradoColor{
+       text-align: center;
+       color: rgb(161, 206, 83);
+       background-color: rgb(77, 48, 83);
+     }
+     }
+
+     /* estilo de imagen con enlace */
+   #purina{
+    margin: 5px 400px;
+    width= 40%  
+    height= 40% 
+   }
+
+    p{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    
+
+    /*Menu desplegable hasta la linea 94 con animacion con CSS*/
+nav{
+  max-width: 1400px;
+  margin: auto;
+  background-color: rgb(230, 112, 112);
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.menuHorizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuHorizontal >li> a{
+  display: block;
+  padding: 15px 20px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.menuHorizontal >li:hover{
+  background-color: royalblue;
+}
+
+.menuVertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: royalblue;
+}
+
+.menuHorizontal li:hover .menuVertical{
+  display: block;
+}
+
+.menuVertical li:hover{
+  background-color: rgb(3, 75, 25);
+}
+
+.menuVertical li a{
+  display: block;
+  color: aliceblue;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
+/* responsive para celular */
+@media (max-width: 320px) {
+  .titulo{
+    font-size: 2em;
+  }
+
+  body{
+    font-size: 1.25em;
+  }
+
+  p{
+    font-size: 1.30em;
+  }
+
+  .menuHorizontal{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img{
+    width: 100%;
+  }   
+ 
+  } 

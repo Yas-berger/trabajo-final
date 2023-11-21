@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachikachi petshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- inicio header -->
+      <header>
+    <!-- Barra de navegacion bootstrap -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+               <div class="container-fluid">
+               <a class="navbar-brand" href="#"><img class="icono" src="./imagenes/huella.png" alt="menu"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Features</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                   </li>
+                 </ul>
+               </div>
+               </div>
+          </nav>
+          <!-- fin de barra de navegacion -->
+
+            <img src="./imagenes/mascotas.jpg" width= 100% alt="imagen de mascotas"> 
+        
+            <h1 class="titulo">Wachikachi petshop</h1>
+
+     </header>
+     <!-- fin de header -->
+
+    
+<!-- inicio de main -->
+     <main>
+<!-- texto de bienvenida  -->
+            <p>Bienvenidos a nuestro petshop, donde encontrarás todo lo que necesites para tu fiel compañero</p> 
+
+<!-- inicio de menu desplegable -->
+           <h2 class="textoCentradoColor">Selecciona tu mascota para conocer todos los productos que tenemos a disposición</h2>
+
+   <nav>
+       <ul class="menuHorizontal">
+           <li><a href="#">Perros</a>
+                     <ul class="menuVertical">
+                          <li><a href="#">Alimentos</a></li>
+                          <li><a href="#">Snacks</a></li>
+                          <li><a href="#">Juguetes</a></li>
+                          <li><a href="#">Accesorios</a></li>
+                          <li><a href="#">Salud</a></li>
+                          <li><a href="#">Camas e indumentaria</a></li>
+                      </ul>
+           </li>
+
+           <li><a href="#">Gatos</a>
+                     <ul class="menuVertical">
+                          <li><a href="#">Alimentos</a></li>
+                          <li><a href="#">Snacks</a></li>
+                          <li><a href="#">Juguetes</a></li>
+                          <li><a href="#">Accesorios</a></li>
+                          <li><a href="#">Salud</a></li>
+                          <li><a href="#">Camas e indumentaria</a></li>
+                     </ul>
+           </li>
+
+           <li><a href="#">Peces</a>
+                     <ul class="menuVertical">
+                          <li><a href="#">Alimentos</a></li>
+                          <li><a href="#">Acuarios y peceras</a></li>
+                          <li><a href="#">Salud</a></li>
+                     </ul>
+           </li>
+
+           <li><a href="#">Pequeños animales</a>
+                     <ul class="menuVertical">
+                          <li><a href="#">Alimentos</a></li>
+                          <li><a href="#">Accesorios</a></li>
+                     </ul>
+           </li>
+
+           <li><a href="#">Aves</a>
+                     <ul class="menuVertical">
+                          <li><a href="#">Alimentos</a></li>
+                          <li><a href="#">Accesorios</a></li>
+                          <li><a href="#">Salud</a></li>
+                     </ul>
+           </li>
+         
+       </ul>
+   </nav>
+<!-- fin de menu desplegable -->
+<br>
+
+<!-- imagen interactiva -->
+    <h2 class="textoCentradoColor">Contamos con alimentos Purina</h2>
+
+    <div id="Purina">
+         <a target="_blank" href="https://www.youtube.com/watch?v=tm9WCBMtLPI">
+        <img src="./imagenes/alimentos purina.jpg" alt="alimentos purina">
+         </a>
+    </div>
+<!-- fin de imagen interactiva -->
+
+
+<!-- lista de alimentos -->
+    <ul>
+       <li>Dog chow</li>
+       <li>Dogui</li>
+       <li>Excellent gatos</li>
+       <li>y muchos mas!!!</li>
+    </ul>
+
+    </main>
+
+<!-- inicio de footer -->
+    <footer>
+       <p>Registrate y recibí las últimas noticias, actualizaciones y ofertas especiales en tu correo electrónico.
+        Además participas del sorteo de 1 año de comida para tu mascota!!!!
+       </p> 
+<!-- formulario -->
+      <fieldset>
+             <form action="">
+                       <legend>Registrate</legend>
+                       <label for="nombre">nombre:</label>
+                       <input type="text" name="nombre" id="nombre" ><br>
+    
+                       <label for="telefono">telefono:</label>
+                       <input type="number" name="telefono" id="telefono"><br>
+    
+                       <label for="email">correo elctronico:</label>
+                       <input type="email" name="email" id="email"><br>
+    
+                       <label for="date">fecha de nacimiento:</label>
+                       <input type="date" name="date" id="date"><br>
+    
+                       <button onclick="enviar()">Enviar</button>
+    
+             </form>
+      </fieldset> 
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scrips/scrips.js"></script>
+    <!-- vinculo a archivo js -->
+</body>
+</html>
